@@ -1,0 +1,21 @@
+<form method="POST" class="form-register" style="color:black" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+
+    {{ form.name.label }}
+    {{ form.name(class="form-control", placeholder="Name") }}
+
+    {{ form.email.label }}
+    {{ form.email(class="form-control-file", placeholder="Email") }}
+    
+    {{ form.img.label }}
+    {{ form.img() }}
+
+    {{ form.phone.label }}
+    {{ form.phone(class="form-control", placeholder="Phone") }}
+
+    
+
+    
+    <br>
+    {{form.submit(class="btn btn-lg btn-block btn-primary")}}
+</form>
